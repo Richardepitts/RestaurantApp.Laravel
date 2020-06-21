@@ -14,7 +14,21 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div class="row">
+                        <div class="col-sm4">
+                            <h4>Management</h4>
+                            <img width="50px" src="{{asset('images/management.svg')}}" />
+                        </div>
+                            <div class="col-sm4">
+                            <h4>Cashier</h4>
+                            <img width="50px" src="{{asset('images/cashier.svg')}}" />
+                        </div>
+                            <div class="col-sm4">
+                            <h4>Report</h4>
+                            <img width="50px" src="{{asset('images/data.svg')}}" />
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
