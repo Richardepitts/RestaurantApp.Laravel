@@ -17,29 +17,15 @@
                 <i class="fas fa-align-left"></i>
             Create a Category
             <hr>
-            @if($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                           <li> {{ $error }} </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            <form action="/management/category" method="POST">
-                @csrf   
+            <form>   
                 <div class="form-group">
                     <label for="categoryName">Category Name </label>
-                    <br>
                     <input type="text" name="name" class="form-control" placeholder="Category...">
                 <div>
-                <br>
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn">
             </form>
             <hr>
             </div>
         </div>
     </div>
 @endsection
-
-
