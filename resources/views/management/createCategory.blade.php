@@ -17,7 +17,8 @@
                 <i class="fas fa-align-left"></i>
             Create a Category
             <hr>
-            <form>   
+            <form action="/management/category" method="POST">
+                @csrf   
                 <div class="form-group">
                     <label for="categoryName">Category Name </label>
                     <br>
