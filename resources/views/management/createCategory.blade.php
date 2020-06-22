@@ -17,14 +17,19 @@
                 <i class="fas fa-align-left"></i>
             Create a Category
             <hr>
-            <form>   
+            <form action="/management/category" method="POST">
+                @csrf   
                 <div class="form-group">
                     <label for="categoryName">Category Name </label>
+                    <br>
                     <input type="text" name="name" class="form-control" placeholder="Category...">
                 <div>
-                <button type="submit" class="btn">
+                <br>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
         </div>
     </div>
 @endsection
+
+
