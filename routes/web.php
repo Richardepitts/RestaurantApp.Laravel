@@ -25,4 +25,4 @@ Route::get('/management', function(){
     return view('management.index');
 });
 
-Route::resource('management/category', 'Management/CategoryController');
+Route::resource('management/category', 'Management\CategoryController');
