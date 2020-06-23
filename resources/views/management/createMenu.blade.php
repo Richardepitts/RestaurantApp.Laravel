@@ -26,14 +26,33 @@
                     </ul>
                 </div>
             @endif
-            <form action="/management/category" method="POST">
+            <form action="/management/menu" method="POST">
                 @csrf   
                 <div class="form-group">
-                    <label for="categoryName">Category Name </label>
-                    <br>
-                    <input type="text" name="name" class="form-control" placeholder="Category...">
-                <div>
-                <br>
+            <label for="menuName">Menu Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Menu...">
+          </div>
+          <label for="menuPrice">Price</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" name="price" class="form-control" aria-label="Amount (to the nearest dollor)">
+            <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+            </div>
+          </div>
+          <label for="MenuImage">Image</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" name="image" class="custom-file-input" id="inputGroupFile01">
+              <label class="custom-file-label" for="inputGroupFile01">Choose File</label>            
+            </div>
+          </div>
+                </div>
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>
             <hr>
