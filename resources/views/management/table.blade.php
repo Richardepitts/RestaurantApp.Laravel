@@ -25,7 +25,7 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($tables as $table)
+            @foreach($tables ?? '' as $table)
               <tr>
                 <td>{{$table->id}}</td>
                 <td>{{$table->name}}</td>
