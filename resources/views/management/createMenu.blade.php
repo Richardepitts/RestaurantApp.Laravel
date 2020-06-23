@@ -52,7 +52,17 @@
               <label class="custom-file-label" for="inputGroupFile01">Choose File</label>            
             </div>
           </div>
-                </div>
+
+          <div class="form-group">
+            <label for="Description">Description</label>
+            <input type="text" name="description" class="form-control" placeholder="Description...">
+          </div>
+
+
+
+
+          
+            
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>
             <hr>
