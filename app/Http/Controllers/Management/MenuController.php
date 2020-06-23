@@ -14,7 +14,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        return view('management.menu');
     }
 
     /**
@@ -24,7 +24,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        //
+        return view('management.createMenu');
     }
 
     /**
