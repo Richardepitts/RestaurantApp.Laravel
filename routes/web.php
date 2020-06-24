@@ -38,17 +38,16 @@ Route::get('/management', function(){
     Route::post('/cashier/savePayment', 'Cashier\CashierController@savePayment');
     Route::get('/cashier/showReceipt/{saleID}', 'Cashier\CashierController@showReceipt');
 
-    
+    // routes for management
     Route::resource('management/category', 'Management\CategoryController');
-
     Route::resource('management/menu', 'Management\MenuController');
-
     Route::resource('management/table', 'Management\tableController');
+    Route::resource('management/user','Management\UserController');
 
     //routes for report
     
     Route::get('/report', 'Report\ReportController@index');
     Route::get('/report/show', 'Report\ReportController@show');
     
-    // Export to excel
+        // Export to excel
     Route::get('/report/show/export', 'Report\ReportController@export');
