@@ -50,3 +50,5 @@ Route::get('/management', function(){
     Route::get('/report', 'Report\ReportController@index');
     Route::get('/report/show', 'Report\ReportController@show');
     
+    // Export to excel
+    Route::get('/report/show/export', 'Report\ReportController@export');
