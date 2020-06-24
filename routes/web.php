@@ -39,8 +39,14 @@ Route::get('/management', function(){
     Route::get('/cashier/showReceipt/{saleID}', 'Cashier\CashierController@showReceipt');
 
     
-Route::resource('management/category', 'Management\CategoryController');
+    Route::resource('management/category', 'Management\CategoryController');
 
-Route::resource('management/menu', 'Management\MenuController');
+    Route::resource('management/menu', 'Management\MenuController');
 
-Route::resource('management/table', 'Management\tableController');
+    Route::resource('management/table', 'Management\tableController');
+
+    //routes for report
+    
+    Route::get('/report', 'Report\ReportController@index');
+    Route::get('/report/show', 'Report\ReportController@show');
+    
