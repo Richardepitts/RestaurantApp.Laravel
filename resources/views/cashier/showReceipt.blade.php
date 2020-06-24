@@ -11,9 +11,9 @@
   <div id="wrapper">
     <div id="receipt-header">
       <h3 id="resturant-name">Resturant App Devtamin</h3>
-      <p>Address: 341 N Vakanda Ave</p>
-      <p>Analpolis, MD 1234</p>
-      <p>Tel: 473-XXXX-XXXX</p>
+      <p>Address: 5520 Cranbrook Lane</p>
+      <p>Houston, TX 77056</p>
+      <p>Tel: 713-808-5889</p>
       <p>Reference Receipt: <strong>{{$sale->id}}</strong></p>
     </div>
     <div id="receipt-body">
